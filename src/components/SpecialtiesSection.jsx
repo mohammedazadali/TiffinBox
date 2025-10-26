@@ -59,10 +59,8 @@ const SpecialtiesSection = () => {
       <h2 className="text-center font-light head-text mb-10 text-3xl sm:text-4xl lg:text-5xl">
         <TextAnimate text="Our Specialties" />
       </h2>
-
-      {/* Mobile Layout */}
       <div className="flex flex-col w-full lg:hidden gap-6">
-        {/* Left data stacked */}
+
         {leftData.map((item, idx) => (
           <div key={idx} className="bg-black/20 p-4 rounded-xl shadow-md">
             <h3 className="font-semibold text-white">{item.title}</h3>
@@ -70,7 +68,7 @@ const SpecialtiesSection = () => {
           </div>
         ))}
 
-        {/* Central Image */}
+
         <motion.img
           src={services}
           alt="South Indian Dish"
@@ -79,7 +77,7 @@ const SpecialtiesSection = () => {
           className="w-full max-w-md mx-auto mt-6 mb-6"
         />
 
-        {/* Right data stacked */}
+
         {rightData.map((item, idx) => (
           <div key={idx} className="bg-black/20 p-4 rounded-xl shadow-md">
             <h3 className="font-semibold text-white">{item.title}</h3>
@@ -88,7 +86,7 @@ const SpecialtiesSection = () => {
         ))}
       </div>
 
-      {/* Desktop Layout */}
+
       <motion.div
         initial={{ opacity: 0, scale: 0.85 }}
         whileInView={{ opacity: 1, scale: 1, transition: { duration: 1 } }}
@@ -112,7 +110,7 @@ const SpecialtiesSection = () => {
           </span>
         </motion.button>
 
-        {/* Desktop Info Boxes */}
+
         {specialtiesData.map((item, idx) => {
           let positionClasses = "";
           switch (item.position) {

@@ -13,7 +13,7 @@ const Hero = () => {
         <div className="bg-[#FCB017] w-full h-[50px] rounded-full"></div>
       </div>
 
-      <div className="fixed top-1/2 right-4 lg:right-[6%] z-50 -translate-y-1/2 flex flex-col items-center gap-4 text-2xl">
+      <div className="fixed top-1/2 right-4 lg:right-[6%] z-10 -translate-y-1/2 flex flex-col items-center gap-4 text-2xl">
         {[FaInstagram, CiFacebook, CiTwitter].map((Icon, idx) => (
           <a
             key={idx}

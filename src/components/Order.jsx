@@ -14,7 +14,7 @@ const Order = () => {
         backgroundSize: "auto 70%",
       }}
     >
-      {/* Text Content */}
+
       <div className="relative z-10 basis-full lg:basis-2/3 flex flex-col gap-6">
         <span className="text-[#FCB017] head-text font-normal text-[14px] leading-[180%] tracking-[6px] uppercase">
           ONLINE ORDER
@@ -40,7 +40,7 @@ const Order = () => {
         </button>
       </div>
 
-      {/* Food Image */}
+
       <div className="relative w-full lg:basis-1/3 flex justify-center lg:justify-end mt-10 lg:mt-0">
         <img
           src={order_Food}
@@ -49,8 +49,7 @@ const Order = () => {
         />
       </div>
 
-      {/* Gradient overlay for readability */}
-      <div className="absolute inset-0 bg-linear-to-l from-black/40 to-transparent pointer-events-none"></div>
+ <div className="absolute inset-0 bg-linear-to-l from-black/40 to-transparent pointer-events-none"></div>
     </section>
   );
 };

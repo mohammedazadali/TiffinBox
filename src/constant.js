@@ -1,5 +1,14 @@
 import { food1 } from "./assets/data";
 
+
+export const menuItems = [
+  { label: "Menu", path: "/menu" },
+  { label: "Order Online", path: "/order" },
+  { label: "Book a Table", path: "/book" },
+  { label: "About Us", path: "/about" },
+  { label: "Contact Us", path: "/contact" },
+];
+
 export const featureMenu = [
   {
     id: 1,
